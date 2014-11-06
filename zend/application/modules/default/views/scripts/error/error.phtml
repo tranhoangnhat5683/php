@@ -1,0 +1,10 @@
+    <div id="content">
+        <h1><?php echo $this->message; ?></h1>
+        <h2>Exception information:</h2> 
+        <p><b>Message:</b> <?php echo $this->exception->getMessage(); ?></p>
+        <h2>Stack trace</h2>
+        <pre><?php echo $this->exception->getTraceAsString(); ?></pre>
+        <h2>Request parameters:</h2>
+        <pre><?php var_dump($this->request->getParams()); ?></pre>
+    </div>
+
